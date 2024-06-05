@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript-მაუსის ხდომილობები-დავალება 1</title>
+    <style>
+        #onoff{
+            width: 40px;
+            height: 38px;
+            margin-top: 40px;
+            margin-left: 40px;
+            border-radius: 10px;
+            border-color: brown;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="on" id="onoff" onclick="onoff();">
+
+    <script>
+        function onoff(){
+          currentvalue = document.getElementById('onoff').value;
+          if(currentvalue == "Off"){
+            document.getElementById("onoff").value="On";
+            var currentvalue = document.getElementById("onoff");
+            currentvalue.style.backgroundColor = "green"
+             
+          }else{
+            document.getElementById("onoff").value="Off";
+            var currentvalue = document.getElementById("onoff");
+            currentvalue.style.backgroundColor = "red"
+             
+          }
+        }
+        </script>
+        
+    
+</body>
+</html>
